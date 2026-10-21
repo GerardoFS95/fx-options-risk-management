@@ -15,11 +15,8 @@ from risk_engine import (
 st.set_page_config(page_title='MXN FX Options Risk Workbench', layout='wide')
 st.title('MXN vs G10 FX Options Risk Workbench')
 st.caption('Pre-trade option analytics • hedge sizing (forward / option / zero-cost collar) • trade ledger • '
-           'portfolio Greeks • scenario risk • all risk reported in MXN')
-st.warning('Designed for European vanilla FX options priced with Garman-Kohlhagen (Black-Scholes-Merton with a foreign '
-           'rate). Every pair is quoted MXN per 1 unit of the G10 currency; premium, strike and P&L are in MXN. '
-           'A single flat vol is used per trade (no smile/skew). Spots, rates and vols shown are illustrative '
-           'placeholders: overwrite with live dealer quotes. This is decision support, not a trade approval system.')
+           'portfolio Greeks • scenario risk • all risk reported in MXN • Created by Gerardo Ferreira')
+
 
 PURPOSES = ['Hedge', 'Hedge / optionality', 'Risk reduction', 'Trading / opportunistic']
 PAYABLE = 'Payable: need to buy foreign ccy (importer / FX debt service)'
